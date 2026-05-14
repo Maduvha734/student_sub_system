@@ -1,0 +1,127 @@
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ cd~
+bash: cd~: command not found
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ cd ~
+
+0407220606088@RDS MINGW64 ~ (main)
+$ ssh-keygen -t ed25519 -C"Pokienimnims@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/0407220606088/.ssh/id_ed25519):
+/c/Users/0407220606088/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? y
+Enter passphrase for "/c/Users/0407220606088/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/0407220606088/.ssh/id_ed25519
+Your public key has been saved in /c/Users/0407220606088/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:Ad/zL+ucQAjUt9m9H+HdTFIbAJCDxzkDgC5JxKGZSeQ Pokienimnims@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|+=. ..+o+.+....  |
+|+* . . +.X.    ..|
+|*Eo   . +.*+ . .o|
+| o .   . ooo. oo.|
+|  .     S . . .=+|
+|         .   ..o+|
+|          . . ...|
+|           o +  .|
+|           .=    |
++----[SHA256]-----+
+
+0407220606088@RDS MINGW64 ~ (main)
+$ $ eval "$(ssh-agent -s)"
+bash: $: command not found
+
+0407220606088@RDS MINGW64 ~ (main)
+$ eval "$(ssh-agent -s)"
+Agent pid 2212
+
+0407220606088@RDS MINGW64 ~ (main)
+$ ssh-add ~/.ssh/id_ed25519
+Enter passphrase for /c/Users/0407220606088/.ssh/id_ed25519:
+Identity added: /c/Users/0407220606088/.ssh/id_ed25519 (Pokienimnims@gmail.com)
+
+0407220606088@RDS MINGW64 ~ (main)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHsvgafawjpjiUOyrxdC2MYcbESnJ9SaBBeIu+GCu7Sd Pokienimnims@gmail.com
+
+0407220606088@RDS MINGW64 ~ (main)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+0407220606088@RDS MINGW64 ~ (main)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+0407220606088@RDS MINGW64 ~ (main)
+$ cat ~/.ssh/id_ed25519
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABA+jWzOHb
+V1wO2NxaAeC48KAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIHsvgafawjpjiUOy
+rxdC2MYcbESnJ9SaBBeIu+GCu7SdAAAAoBtuGJ3khTjMuFO808HP5dhtfGpLnm2GbKlhui
+nH3Aso1NDVsUSIrBC03ru6a3/0vkgXc+Yi4O3x/0RBegzJHjmUfq61Xq3mLLZnN6clXJOl
+/wEcXhcGYwZgXJycmb5ZQxU6xs8cjX0hJNkmoiJ0zAaapkcmDygfxjnkMPdaypVKbkxSE1
+Pm+E0s/+dEaJOmfVkbGTc7ctFj6lr3LHB8k0o=
+-----END OPENSSH PRIVATE KEY-----
+  ssh -v
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           destination [command [argument ...]]
+       ssh [-Q query_option]
+
+0407220606088@RDS MINGW64 ~ (main)
+$ git clone https://github.com/Maduvha734/student_sub_system.git
+fatal: destination path 'student_sub_system' already exists and is not an emptydirectory.
+
+0407220606088@RDS MINGW64 ~ (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/0407220606088/.git/
+
+0407220606088@RDS MINGW64 ~ (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+0407220606088@RDS MINGW64 ~ (main)
+$ git add
+fatal: Unable to create 'C:/Users/0407220606088/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+0407220606088@RDS MINGW64 ~ (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+0407220606088@RDS MINGW64 ~ (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+0407220606088@RDS MINGW64 ~ (main)
+$  git commit -m "added files"
+fatal: Unable to create 'C:/Users/0407220606088/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+0407220606088@RDS MINGW64 ~ (main)
+$
