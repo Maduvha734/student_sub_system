@@ -74,7 +74,45 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
            [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
            destination [command [argument ...]]
        ssh [-Q query_option]
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ eval "$ (ssh-agent -s)"
+bash: syntax error near unexpected token `ssh-agent'
 
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 1375
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/0407220606088/.ssh/id_ed25519 (pokienimnims@gmail.com)
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICzEbXGotmXtZdIlgnZPk+c9jVxXdcjEOsp3uybHNtu4 pokienimnims@gmail.com
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ ssh -T git@github.com
+Hi Maduvha734! You've successfully authenticated, but GitHub does not provide shell access.
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ touch index.html
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ touch abbot.html
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ touchindex.html
+bash: touchindex.html: command not found
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ touch about.html
+
+0407220606088@RDS MINGW64 ~/Desktop (master)
+$ touch history.txt
 0407220606088@RDS MINGW64 ~ (main)
 $ git clone https://github.com/Maduvha734/student_sub_system.git
 fatal: destination path 'student_sub_system' already exists and is not an emptydirectory.
